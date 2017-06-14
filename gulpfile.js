@@ -6,6 +6,7 @@ var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
 var sourcemaps = require('gulp-sourcemaps');
+var sass = require('gulp-sass');
 
 var vendors = ['jquery'];
 
@@ -13,8 +14,16 @@ gulp.task('pug', function () {
   return gulp.src('./src/templates/*.pug')
     .pipe(pug({
       pretty: true
-    }))
+    }).on('error', errorLog))
     .pipe(gulp.dest('./dist'))
+});
+
+gulp.task('sass', function () {
+  return gulp.src('./src/sass/main.scss')
+    .pipe(sass({
+      style: 'compressed'
+    }).on('error', sass.logError))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('build:vendor', function () {
@@ -54,6 +63,12 @@ gulp.task('build:app', function () {
 gulp.task('watch', function () {
   gulp.watch('./src/templates/**/*.pug', ['pug']);
   gulp.watch('./src/js/**/*.js', ['build:app']);
+  gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['pug', 'build:app', 'build:vendor', 'watch']);
+function errorLog(error) {
+  console.error.bind(error);
+  this.emit('end');
+}
+
+gulp.task('default', ['pug', 'sass', 'build:app', 'build:vendor', 'watch']);
