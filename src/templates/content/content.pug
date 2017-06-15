@@ -1,2 +1,12 @@
-h2(class="col-sm-6")
-  Hi all, this is content
+include product-mixin
+
+- var iphoneReview = ['Apple iPhone 6S review', '4', 'John Mayer', '- Nov 2, 2015', 'Improved speed everywhere (new processor, faster wireless, quicker Touch ID sensor); a sturdier body; better front and rear cameras; a bold new 3D Touch pressure-sensitive display that could ...', ['mobile', 'apple', 'touch', 'news'], './img/iphone.png']
+
+
+div.page-content
+  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
+  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
+  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
+  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
+  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
+

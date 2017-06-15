@@ -1,7 +1,9 @@
-@import "partials/_otherstyle";
-@import "../../node_modules/bootstrap-grid/dist/grid.min.css";
+@import "partials/reset";
+@import "partials/header/header";
+@import "partials/content/content";
 
 body {
-  background-color: antiquewhite;
-  color: gold;
+  max-width: 1380px;
+  margin: 0 auto;
+  color: black;
 }

@@ -16,6 +16,7 @@
     "bootstrap-grid": "^2.0.1",
     "browserify": "^14.4.0",
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",

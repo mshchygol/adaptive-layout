@@ -1,0 +1,21 @@
+.logo {
+  height: 69px;
+  width: 196px;
+  margin: 0 auto;
+  border: 2px solid white;
+  text-align: center;
+  clear: both;
+
+  .logo__top {
+    color: #f8f8f8;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+
+  .logo__bottom {
+    margin-top: 4px;
+    color: #ffe89c;
+    font-size: 15px;
+  }
+}

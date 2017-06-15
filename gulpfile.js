@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
+var imagemin = require('gulp-imagemin');
 
 var vendors = ['jquery'];
 
@@ -24,6 +25,13 @@ gulp.task('sass', function () {
       style: 'compressed'
     }).on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('image', function () {
+  return gulp.src('./src/assets/img/*')
+    .pipe(imagemin()
+      .on('error', errorLog))
+    .pipe(gulp.dest('./dist/img'))
 });
 
 gulp.task('build:vendor', function () {

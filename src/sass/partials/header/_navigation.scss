@@ -1,0 +1,23 @@
+.nav {
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 65px;
+  font-size: 15px;
+  height: 54px;
+  background-color: rgba(50, 50, 50, 0.6);
+
+  ul {
+    display: table;
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+  }
+
+  li {
+    display: table-cell;
+    text-align: center;
+  }
+}
+
