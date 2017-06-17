@@ -1,0 +1,23 @@
+
+.footer-product {
+  display: inline-block;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.55;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.footer-product__details {
+  position: absolute;
+  bottom: 0;
+}

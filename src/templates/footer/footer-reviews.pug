@@ -1,0 +1,12 @@
+include product-mixin
+
+- var SAMSUNG = ['./img/samsung.png', 'Samsung UNH6350 series  review', '4', 'by John Mayer - Nov 2, 2015'];
+- var BEATS = ['./img/footer-beats.png', 'Beats Solo 2. Why is it so  popular?', '5', 'by David Carnoy - Oct 12, 2015'];
+- var GALAXY = ['./img/galaxy.png', 'Samsung Galaxy S6', '4', 'by John Mayer - Nov 2, 2015'];
+
+div.footer-items
+  p.footer-items__title Best Latest Reviews
+  +product(SAMSUNG[0], SAMSUNG[1], SAMSUNG[2], SAMSUNG[3])
+  +product(BEATS[0], BEATS[1], BEATS[2], BEATS[3])
+  +product(GALAXY[0], GALAXY[1], GALAXY[2], GALAXY[3])
+  

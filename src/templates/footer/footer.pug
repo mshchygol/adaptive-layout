@@ -1,7 +1,12 @@
 footer
-  div.row
-    div(class="col-5")
-      div.logo-wrap-footer
-        include ../header/logo
-    div(class="col-7")
-  div.footer-bottom
+  div.footer-wrap
+    div.row
+      div(class="col-5")
+        div.logo-wrap-footer
+          include ../header/logo
+        include about
+        include tags
+      div(class="col-7")
+        include footer-products
+        include footer-reviews
+div.footer-bottom

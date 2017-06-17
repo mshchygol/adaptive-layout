@@ -1,0 +1,9 @@
+- var TAGS = ['music', 'beats', 'headphones', 'beats solo', 'apple', 'streets', 'lifestyle', 'news', 'service', 'cloud', 'touch', 'samsung', 'mobile', 'xbox'];
+
+div.tags-block
+  h4.tags-block__title Popular tags
+  div.tags-block__tags
+    ul
+      each tag in TAGS
+        li
+          a(href="#") #{tag}

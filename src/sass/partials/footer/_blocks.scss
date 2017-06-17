@@ -1,0 +1,33 @@
+
+
+.about-block__title, .tags-block__title, .footer-items__title {
+  font-size: 20pt;
+  color: #ffe89c;
+}
+
+.about-block__title, .tags-block__title {
+  margin: 60px 0 25px;
+}
+
+.about-block__body, .tags-block__tags a {
+  font-size: 14pt;
+  color: #dcdcdc;
+  line-height: 22pt;
+}
+
+.tags-block__tags {
+
+  li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:visited {
+
+    }
+  }
+}
+

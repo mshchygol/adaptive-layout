@@ -1,0 +1,11 @@
+include product-mixin
+
+- var IPHONE = ['./img/footer-iphone.png', 'iPhone 6S review', '4', 'by John Mayer - Nov 2, 2015'];
+- var SYNDICATE = ['./img/syndicate.png', 'Assassin\'s Creed Syndicate  review', '4', 'by David Carnoy - Oct 12, 2015'];
+- var NIKON = ['./img/nikon.png', 'Nikon D750 review', '4', 'by John Mayer - Nov 2, 2015'];
+
+div.footer-items
+  p.footer-items__title Best Rates Products
+  +product(IPHONE[0], IPHONE[1], IPHONE[2], IPHONE[3])
+  +product(SYNDICATE[0], SYNDICATE[1], SYNDICATE[2], SYNDICATE[3])
+  +product(NIKON[0], NIKON[1], NIKON[2], NIKON[3])
