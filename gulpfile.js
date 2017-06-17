@@ -9,7 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 
-var vendors = ['jquery'];
+var vendors = ['jquery', 'masonry-layout'];
 
 gulp.task('pug', function () {
   return gulp.src('./src/templates/*.pug')

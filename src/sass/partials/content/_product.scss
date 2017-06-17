@@ -1,5 +1,18 @@
 .product {
-  margin: 0 10px;
+  border: 2px solid black;
+  margin: 0 10px 20px;
   width: 280px;
   display: inline-block;
+  overflow: hidden;
+
+  img {
+    height: 202px;
+  }
+}
+
+.product__image {
+  height: 202px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
 }

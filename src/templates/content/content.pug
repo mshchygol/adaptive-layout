@@ -1,19 +1,28 @@
 include product-mixin
 
-- var iphoneReview = ['Apple iPhone 6S review', '4', ' John Mayer ', '- Nov 2, 2015', 'Improved speed everywhere (new processor, faster wireless, quicker Touch ID sensor); a sturdier body; better front and rear cameras; a bold new 3D Touch pressure-sensitive display that could ...', ['mobile', 'apple', 'touch', 'news'], './img/iphone.png'];
-- var haloReview = ['Why Halo 5: Guardians Record  Breaking Sales', '5', ' Jeffrey Wallens ', '- Oct 22, 2015', 'As a whole the Xbox community has always been more interactive because of the Halo series. The PS4 following is still great but falls short. The fantastic sales records broken by Halo 5: Guardians shows...', ['games', 'action', 'xbox', 'pc', 'ps4'], './img/halo.png'];
-- var beatsReview = ['Beats Solo 2 review', '3', ' David Carnoy ', '- Oct 14, 2015', 'Like the new Studio, the Solo 2, which weighs in at 7.2 ounces (205 grams), is built more sturdily and has no visible screws.', ['music', 'beats', 'headphones', 'beats solo', 'streets', 'lifestyle'], './img/beats.png'];
-- var digitalReview = ['DigitalOcean. Simple Cloud  Hosting, Built for Developers.', '4', ' Helen Fiesko ', '- Oct 22, 2015', 'The services they provide are quite basic - you get VPS\'s in the cloud and DNS management, that\'s all. No fancy load balancing, hosted databases, hadoop clusters, etc.. ', ['servers', 'service', 'hosting', 'cheap', 'best', 'cloud', 'popular'], './img/digital.png'];
-
-
-
-
-
+- var IPHONE_REVIEW = ['Apple iPhone 6S review', '4', ' John Mayer ', '- Nov 2, 2015', 'Improved speed everywhere (new processor, faster wireless, quicker Touch ID sensor); a sturdier body; better front and rear cameras; a bold new 3D Touch pressure-sensitive display that could ...', ['mobile', 'apple', 'touch', 'news'], './img/iphone.png'];
+- var HALO_REVIEW = ['Why Halo 5: Guardians Record  Breaking Sales', '5', ' Jeffrey Wallens ', '- Oct 22, 2015', 'As a whole the Xbox community has always been more interactive because of the Halo series. The PS4 following is still great but falls short. The fantastic sales records broken by Halo 5: Guardians shows...', ['games', 'action', 'xbox', 'pc', 'ps4'], './img/halo.png'];
+- var BEATS_REVIEW = ['Beats Solo 2 review', '3', ' David Carnoy ', '- Oct 14, 2015', 'Like the new Studio, the Solo 2, which weighs in at 7.2 ounces (205 grams), is built more sturdily and has no visible screws.', ['music', 'beats', 'headphones', 'beats solo', 'streets', 'lifestyle'], './img/beats.png'];
+- var DIGITAL_REVIEW = ['DigitalOcean. Simple Cloud  Hosting, Built for Developers.', '4', ' Helen Fiesko ', '- Oct 22, 2015', 'The services they provide are quite basic - you get VPS\'s in the cloud and DNS management, that\'s all. No fancy load balancing, hosted databases, hadoop clusters, etc.. ', ['servers', 'service', 'hosting', 'cheap', 'best', 'cloud', 'popular'], './img/digital.png'];
+- var BEST_SELLER_LABEL = 'BEST SELLER';
+- var BEST_CHOICE_LABEL = 'BEST CHOICE';
 
 div.page-content
-  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
-  +product(haloReview[0], haloReview[1], haloReview[2], haloReview[3], haloReview[4], haloReview[5], haloReview[6])
-  +product(beatsReview[0], beatsReview[1], beatsReview[2], beatsReview[3], beatsReview[4], beatsReview[5], beatsReview[6])
-  +product(digitalReview[0], digitalReview[1], digitalReview[2], digitalReview[3], digitalReview[4], digitalReview[5], digitalReview[6])
-  +product(iphoneReview[0], iphoneReview[1], iphoneReview[2], iphoneReview[3], iphoneReview[4], iphoneReview[5], iphoneReview[6])
+  +product-no-label(IPHONE_REVIEW[0], IPHONE_REVIEW[1], IPHONE_REVIEW[2], IPHONE_REVIEW[3], IPHONE_REVIEW[4], IPHONE_REVIEW[5], IPHONE_REVIEW[6])
+  +product-no-label(HALO_REVIEW[0], HALO_REVIEW[1], HALO_REVIEW[2], HALO_REVIEW[3], HALO_REVIEW[4], HALO_REVIEW[5], HALO_REVIEW[6])
+  +product-no-label(BEATS_REVIEW[0], BEATS_REVIEW[1], BEATS_REVIEW[2], BEATS_REVIEW[3], BEATS_REVIEW[4], BEATS_REVIEW[5], BEATS_REVIEW[6])
+  +product-no-label(DIGITAL_REVIEW[0], DIGITAL_REVIEW[1], DIGITAL_REVIEW[2], DIGITAL_REVIEW[3], DIGITAL_REVIEW[4], DIGITAL_REVIEW[5], DIGITAL_REVIEW[6])
+  +product-no-label(BEATS_REVIEW[0], BEATS_REVIEW[1], BEATS_REVIEW[2], BEATS_REVIEW[3], BEATS_REVIEW[4], BEATS_REVIEW[5], BEATS_REVIEW[6])
+  +product-no-label(IPHONE_REVIEW[0], IPHONE_REVIEW[1], IPHONE_REVIEW[2], IPHONE_REVIEW[3], IPHONE_REVIEW[4], IPHONE_REVIEW[5], IPHONE_REVIEW[6])
+  +product-no-label(DIGITAL_REVIEW[0], DIGITAL_REVIEW[1], DIGITAL_REVIEW[2], DIGITAL_REVIEW[3], DIGITAL_REVIEW[4], DIGITAL_REVIEW[5], DIGITAL_REVIEW[6])
+  +product-no-label(HALO_REVIEW[0], HALO_REVIEW[1], HALO_REVIEW[2], HALO_REVIEW[3], HALO_REVIEW[4], HALO_REVIEW[5], HALO_REVIEW[6])
+  +product-no-label(DIGITAL_REVIEW[0], DIGITAL_REVIEW[1], DIGITAL_REVIEW[2], DIGITAL_REVIEW[3], DIGITAL_REVIEW[4], DIGITAL_REVIEW[5], DIGITAL_REVIEW[6])
+  +product-no-label(IPHONE_REVIEW[0], IPHONE_REVIEW[1], IPHONE_REVIEW[2], IPHONE_REVIEW[3], IPHONE_REVIEW[4], IPHONE_REVIEW[5], IPHONE_REVIEW[6])
+  +product-no-label(HALO_REVIEW[0], HALO_REVIEW[1], HALO_REVIEW[2], HALO_REVIEW[3], HALO_REVIEW[4], HALO_REVIEW[5], HALO_REVIEW[6])
+  +product-no-label(BEATS_REVIEW[0], BEATS_REVIEW[1], BEATS_REVIEW[2], BEATS_REVIEW[3], BEATS_REVIEW[4], BEATS_REVIEW[5], BEATS_REVIEW[6])
+
+include more-button
+
+
+
 
