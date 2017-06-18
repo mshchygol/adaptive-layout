@@ -2,29 +2,36 @@ mixin product-no-label(title, rating, author, date, description, tagList, imgSrc
   div.product
     div.product__image
       img(src= imgSrc)
-    p.product__title= title
-    p.product__rating= rating
-    p by
-      span.product__author= author
-      span.product__date= date
-    p.product__description= description
-    p.product__tag-list
-      ul
-        each tag in tagList
-          li #{tag}
+    div.product__body
+      p.product__title= title
+      p.product__rating= rating
+      p by
+        span.product__author= author
+        span.product__date= date
+      p.product__description= description
+      div.product__tag-list
+        ul
+          each tag in tagList
+            li #{tag}
+      div.product__footer
+        a(href="#") READ REVIEW
+
 
 mixin product-labeled(title, rating, author, date, description, tagList, imgSrc, label)
   div.product
     div.product__image
       img(src= imgSrc)
-    p.product__label= label
-    p.product__title= title
-    p.product__rating= rating
-    p by
-      span.product__author= author
-      span.product__date= date
-    p.product__description= description
-    p.product__tag-list
-      ul
-        each tag in tagList
-          li #{tag}
+    div.product__body
+      p.product__label= label
+      p.product__title= title
+      p.product__rating= rating
+      p by
+        span.product__author= author
+        span.product__date= date
+      p.product__description= description
+      div.product__tag-list
+        ul
+          each tag in tagList
+            li #{tag}
+    div.product__footer
+      a(href="#") READ REVIEW
