@@ -10,5 +10,11 @@
   li {
     display: inline-block;
     margin-left: 10px;
+
+    &:hover {
+      text-decoration: underline;
+      color: #ffe89c;
+      cursor: pointer;
+    }
   }
 }

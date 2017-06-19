@@ -6,6 +6,12 @@
   overflow: hidden;
   position: relative;
 
+  &:hover {
+
+    img {
+      opacity: 1;
+    }
+  }
 }
 
 .footer-product__image {
@@ -15,10 +21,6 @@
   img {
     height: 100%;
     opacity: 0.55;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 

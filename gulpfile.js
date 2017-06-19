@@ -87,6 +87,6 @@ function errorLog(error) {
   this.emit('end');
 }
 
-gulp.task('prod', ['pug', 'sass', 'build:app', 'build:vendor', 'fonts', 'image']);
+gulp.task('build', ['pug', 'sass', 'build:app', 'build:vendor', 'fonts', 'image']);
 
-gulp.task('default', ['pug', 'sass', 'build:app', 'build:vendor', 'fonts', 'watch']);
+gulp.task('default', ['pug', 'sass', 'build:app', 'build:vendor', 'watch']);

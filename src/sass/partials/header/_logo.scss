@@ -1,4 +1,7 @@
-@include font-face("nexa-rust-sans", "../../assets/fonts/NexaRustSans-Black", $file-formats: otf);
+@font-face {
+  font-family: NexaRustSans;
+  src: url(./fonts/NexaRustSans-Black.css);
+}
 
 .logo {
   height: 69px;
@@ -9,15 +12,17 @@
 
   .logo__top {
     color: #f8f8f8;
-    font-family: 'nexa-rust-sans';
+    font-family: Arial, sans-serif;
     font-size: 24px;
     font-weight: 800;
     margin-top: 10px;
+    letter-spacing: 10px;
   }
 
   .logo__bottom {
     margin-top: 4px;
+    letter-spacing: 5px;
     color: #ffe89c;
-    font-size: 15px;
+    font-size: 14px;
   }
 }

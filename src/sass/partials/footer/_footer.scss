@@ -10,10 +10,22 @@ footer {
 }
 
 .footer-bottom {
+  color: #f6f6f6;
   height: 60px;
   background-color: #3c3c3c;
+  padding: 20px 70px;
+  font-size: 14px;
+
+  ul, li {
+    display: inline-block;
+  }
 }
 
-.logo-wrap-footer {
-
+.mail li {
+  margin-right: 15px;
 }
+
+.social li {
+  margin-left: 15px;
+}
+
