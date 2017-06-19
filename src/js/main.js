@@ -75,8 +75,8 @@ $(document).ready(function () {
 
 
   function calculatePadding() {
-    var BLOCK_WIDTH = 310;
-    var MIN_PADDING = 120;
+    var BLOCK_WIDTH = 300;
+    var MIN_PADDING = 110;
     var pageContent = $('#main');
     var pageContentWidth = $('body').width() - MIN_PADDING;
 
