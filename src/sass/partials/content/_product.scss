@@ -1,5 +1,5 @@
 .product {
-  margin: 0 10px 20px;
+  margin: 0 15px 30px;
   width: 280px;
   display: inline-block;
   overflow: hidden;
@@ -8,6 +8,7 @@
 
   &:hover {
     box-shadow: 0 0 15px rgba(0,0,0,2);
+    cursor: pointer;
   }
 }
 
