@@ -4,6 +4,6 @@ mixin product(imgSrc, title, rating, author)
       img(src= imgSrc)
     div.footer-product__details
       p.footer-product__title= title
-      p.footer-product__rating= rating
+      p(class= rating)
       p
         span.footer-product__author= author

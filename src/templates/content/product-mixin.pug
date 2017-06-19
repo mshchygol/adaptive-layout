@@ -4,8 +4,8 @@ mixin product-no-label(title, rating, author, date, description, tagList, imgSrc
       img(src= imgSrc)
     div.product__body
       p.product__title= title
-      p.product__rating Rating
-        = rating
+      div.product__rating
+        p(class= rating)
       p by
         span.product__author= author
         span.product__date= date
@@ -25,8 +25,8 @@ mixin product-labeled(title, rating, author, date, description, tagList, imgSrc,
     div.product__label= label
     div.product__body
       p.product__title= title
-      p.product__rating Rating
-        = rating
+      div.product__rating
+        p(class= rating)
       p by
         span.product__author= author
         span.product__date= date
