@@ -29,3 +29,18 @@
   }
 }
 
+.collapsed {
+  display: none;
+
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: 6px 0;
+  }
+}
+
+div.dropdown {
+  display: none;
+}
+

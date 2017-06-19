@@ -11,7 +11,6 @@ footer {
 
 .footer-bottom {
   color: #f6f6f6;
-  height: 60px;
   background-color: #3c3c3c;
   padding: 20px 70px;
   font-size: 14px;
@@ -32,5 +31,23 @@ footer {
 
 .social li {
   margin-left: 15px;
+}
+
+.grid-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 41.666667%;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  padding: 15px;
+}
+
+.grid-7 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 58.333333%;
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  padding: 15px;
 }
 

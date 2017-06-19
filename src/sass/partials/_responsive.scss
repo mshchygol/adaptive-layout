@@ -1,0 +1,42 @@
+@media (max-width: 1218px) {
+  .nav ul {
+    display: none;
+  }
+
+  .collapsed {
+    display: block;
+    margin-top: 7px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .grid-5 {
+    display: none;
+  }
+
+  .grid-7 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 635px) {
+  ul.mail, ul.social {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .footer-wrap {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+}
