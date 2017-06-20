@@ -27,21 +27,24 @@
   <p style="border-bottom: 1px dashed black;width: 700px;">P.S. Project deployment is still in progress.</p>
   </hr>
   My todo list:
-    <ul style="list-style-type:none;">
+    <ul>
       <li>
-        - replace <i>gulp-simplefont64</i> plugin
+         replace <i>gulp-simplefont64</i> plugin
       </li>
       <li>
-        - refactor <i>sass</i> files (add <code>_variables.scss</code>, add shorthand properties etc.)
+         refactor <i>sass</i> files (add <code>_variables.scss</code>, add shorthand properties etc.)
       </li>
       <li>
-        - add <i>sass mixins</i> for cross-browser compatibility 
+         add <i>postCSS</i> and <i>autoprefixer</i> for cross-browser compatibility
       </li>
       <li>
-        - add expandble menu list
+         add expandble menu list
       </li>
       <li>
-        - create custom modules for JS
+         create custom modules for JS
+      </li>
+      <li>
+        setup gitHub page for preview
       </li>
     </ul>
   

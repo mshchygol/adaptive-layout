@@ -10,6 +10,10 @@
     box-shadow: 0 0 15px rgba(0,0,0,2);
     cursor: pointer;
   }
+
+  i {
+    font-style: italic;
+  }
 }
 
 .product__image {
@@ -33,8 +37,9 @@
 }
 
 .product__title {
+  font-family: "Avenir Next Cyr Medium", sans-serif;
   color: #555555;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .product__rating {
@@ -49,6 +54,10 @@
   font-style: italic;
 }
 
+.product__author, .product__date, .product__body {
+  font-family: "Avenir Next Cyr Light", sans-serif;
+}
+
 .product__body {
   color: #777777;
   font-size: 13px;
@@ -56,6 +65,7 @@
 }
 
 .product__description {
+  font-size: 14px;
   margin: 10px 0;
   line-height: 20px;
 }

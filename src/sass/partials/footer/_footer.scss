@@ -2,6 +2,7 @@
 @import "products";
 
 footer {
+  font-family: "Avenir Next Cyr", sans-serif;
   background-color: #4a4a4a;
 }
 
@@ -13,7 +14,7 @@ footer {
   color: #f6f6f6;
   background-color: #3c3c3c;
   padding: 20px 70px;
-  font-size: 14px;
+  font-size: 13px;
 
   ul, li {
     display: inline-block;
@@ -21,9 +22,11 @@ footer {
 }
 
 .mail li {
+  font-family: "Avenir Next Cyr Medium", sans-serif;
   margin-right: 15px;
 
   a {
+    font-family: "Avenir Next Cyr", sans-serif;
     text-decoration: none;
     color: #f6f6f6;
   }
@@ -35,19 +38,19 @@ footer {
 
 .grid-5 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 41.666667%;
-  -ms-flex: 0 0 41.666667%;
-  flex: 0 0 41.666667%;
-  max-width: 41.666667%;
-  padding: 15px;
+  -webkit-flex: 0 0 44%;
+  -ms-flex: 0 0 44%;
+  flex: 0 0 44%;
+  max-width: 44%;
+  padding: 15px 134px 15px 15px;
 }
 
 .grid-7 {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 58.333333%;
-  -ms-flex: 0 0 58.333333%;
-  flex: 0 0 58.333333%;
-  max-width: 58.333333%;
+  -webkit-flex: 0 0 56%;
+  -ms-flex: 0 0 56%;
+  flex: 0 0 56%;
+  max-width: 56%;
   padding: 15px;
 }
 

@@ -8,6 +8,7 @@ var streamify = require('gulp-streamify');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
+var inlineFonts = require('gulp-inline-fonts');
 
 var vendors = ['jquery', 'masonry-layout'];
 
@@ -25,6 +26,12 @@ gulp.task('sass', function () {
       style: 'compressed'
     }).on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('fonts', function() {
+  return gulp.src('./src/assets/fonts/**/*.otf')
+    .pipe(inlineFonts({ name: 'fonts', formats: ['otf']}))
+    .pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('image', function () {
@@ -79,6 +86,6 @@ function errorLog(error) {
   this.emit('end');
 }
 
-gulp.task('build', ['pug', 'sass', 'build:app', 'build:vendor', 'image']);
+gulp.task('build', ['pug', 'sass', 'fonts', 'build:app', 'build:vendor', 'image']);
 
 gulp.task('default', ['pug', 'sass', 'build:app', 'build:vendor', 'watch']);
