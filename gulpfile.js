@@ -30,7 +30,10 @@ gulp.task('sass', function () {
 
 gulp.task('fonts', function() {
   return gulp.src('./src/assets/fonts/**/*.otf')
-    .pipe(inlineFonts({ name: 'fonts', formats: ['otf']}))
+    .pipe(inlineFonts({
+      name: 'fonts',
+      formats: ['otf']})
+      .on('error', errorLog))
     .pipe(gulp.dest('./dist/fonts'));
 });
 
@@ -54,7 +57,8 @@ gulp.task('build:vendor', function () {
   b.bundle()
     .pipe(source('vendor.js'))
     .pipe(buffer())
-    .pipe(streamify(uglify()))
+    .pipe(streamify(uglify()
+      .on('error', errorLog)))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))
@@ -69,7 +73,8 @@ gulp.task('build:app', function () {
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
-    .pipe(streamify(uglify()))
+    .pipe(streamify(uglify()
+      .on('error', errorLog)))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))

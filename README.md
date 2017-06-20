@@ -17,8 +17,8 @@
       <code>gulp build</code> to launch project deployment tasks
     </li>
     <li>
-       <code>gulp</code> for development enviorment (with <i>watch</i> task,<br>
-        be careful when you are adding new iamges, <i>default</i> task don't include image compression)
+       <code>gulp</code> for development enviorment (with <i>watch</i> task, be careful when you are<br>
+        adding new iamges and fonts, <i>default</i> task don't include images compression and fonts bundle)
     </li>
   </ul>
   
@@ -28,7 +28,7 @@
   </hr>
   My todo list:
     <ul>
-      <li>
+      <li style="text-decoration: line-through;">
          replace <i>gulp-simplefont64</i> plugin
       </li>
       <li>

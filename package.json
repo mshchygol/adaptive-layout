@@ -7,15 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mykhaylo Shchyhol",
+  "license": "MIT",
   "dependencies": {
     "jquery": "^3.2.1",
     "masonry-layout": "^4.2.0"
   },
   "devDependencies": {
-    "bootstrap-grid": "^2.0.1",
-    "bourbon": "^4.3.4",
     "browserify": "^14.4.0",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.3.0",

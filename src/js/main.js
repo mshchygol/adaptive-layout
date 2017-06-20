@@ -2,69 +2,71 @@ var $ = require('jquery');
 var Masonry = require('masonry-layout');
 
 $(document).ready(function () {
+  var YELLOW_STAR = '<img src="./img/yellow-star.png" class="yellow-star">';
+  var WHITE_STAR = '<img src="./img/white-star.png" class="white-star">';
 
-  var yellowStar = '<img src="./img/yellow-star.png" class="yellow-star">';
-  var whiteStar = '<img src="./img/white-star.png" class="white-star">';
-
+  // Creates img elements
   function fiveStars() {
     var i = 0;
     var images = '';
     while (i < 5) {
-      images += yellowStar;
+      images += YELLOW_STAR;
       i++;
     }
     return images;
   }
 
+  // Creates img elements
   function fourStars() {
     var i = 0;
     var images = '';
     while (i < 4) {
-      images += yellowStar;
+      images += YELLOW_STAR;
       i++;
     }
-    return images + whiteStar;
+    return images + WHITE_STAR;
   }
 
+  // Creates img elements
   function threeStars() {
     var i = 0;
     var images = '';
     while (i < 3) {
-      images += yellowStar;
+      images += YELLOW_STAR;
       i++;
     }
-    return images + whiteStar + whiteStar;
+    return images + WHITE_STAR + WHITE_STAR;
   }
 
+  // Creates img elements
   function twoStars() {
     var i = 0;
     var images = '';
     while (i < 2) {
-      images += yellowStar;
+      images += YELLOW_STAR;
       i++;
     }
-
     while (i < 5) {
-      images += whiteStar;
+      images += WHITE_STAR;
       i++;
     }
 
     return images;
   }
 
+  // Creates img elements
   function oneStar() {
     var i = 0;
     var images = '';
     while (i < 4) {
-      images += whiteStar;
+      images += WHITE_STAR;
       i++;
     }
 
-    return yellowStar + images;
+    return YELLOW_STAR + images;
   }
 
-
-
+  // Inserts rating images to products list
   function appendRating() {
     $('.five').append(fiveStars());
     $('.four').append(fourStars());
@@ -73,7 +75,7 @@ $(document).ready(function () {
     $('.one').append(oneStar());
   }
 
-
+  // Finds the best padding value for the main tag
   function calculatePadding() {
     var BLOCK_WIDTH = 300;
     var MIN_PADDING = 110;
@@ -89,15 +91,14 @@ $(document).ready(function () {
   calculatePadding();
   appendRating();
 
+  // Places elements in optimal position based on available vertical space
   new Masonry('div.page-content', {
     itemSelector: 'div.product',
     columnWidth: 'div.product'
   });
 
   $(window).resize(function() {
-
     calculatePadding();
-
   });
 
 });

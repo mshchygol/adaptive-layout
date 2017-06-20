@@ -1,3 +1,10 @@
+- var SOCIAL_ICONS = ['./img/facebook.png', './img/twitter.png', './img/gplus.png', './img/pinterest.png'];
+
+mixin social(src)
+  li
+    a(href="#")
+      img(src= src)
+
 ul.mail
   li
     a(href="#")
@@ -7,15 +14,7 @@ ul.mail
   li contacts@smartreviewer.com
 
 ul.social
-  li
-    a(href="#")
-      img(src="./img/facebook.png")
-  li
-    a(href="#")
-      img(src="./img/twitter.png")
-  li
-    a(href="#")
-      img(src="./img/gplus.png")
-  li
-    a(href="#")
-      img(src="./img/pinterest.png")
+  +social(SOCIAL_ICONS[0])
+  +social(SOCIAL_ICONS[1])
+  +social(SOCIAL_ICONS[2])
+  +social(SOCIAL_ICONS[3])

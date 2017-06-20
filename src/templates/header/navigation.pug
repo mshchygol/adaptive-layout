@@ -1,4 +1,4 @@
-- var items = ['Electronics', 'Computers', 'Games', 'Music', 'Appliances', 'Home & Garden', 'Sport', 'Cars', 'Services', 'More']
+- var NAV_ITEMS = ['Electronics', 'Computers', 'Games', 'Music', 'Appliances', 'Home & Garden', 'Sport', 'Cars', 'Services', 'More']
 
 div.nav
   div.collapsed
@@ -6,9 +6,9 @@ div.nav
     div
     div
   ul
-    each item in items
+    each item in NAV_ITEMS
       li #{item}
         div.dropdown
           ul
-            each option in items
+            each option in NAV_ITEMS
               li #{option}
