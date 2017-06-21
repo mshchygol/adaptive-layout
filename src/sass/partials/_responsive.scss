@@ -24,11 +24,14 @@
 @media (max-width: 635px) {
   ul.mail, ul.social {
     display: block;
-    width: 300px;
+    width: 180px;
     margin: 10px auto;
     text-align: center;
   }
 
+  .mail li {
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 575px) {

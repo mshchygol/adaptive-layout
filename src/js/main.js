@@ -2,8 +2,10 @@ var $ = require('jquery');
 var Masonry = require('masonry-layout');
 
 $(document).ready(function () {
-  var YELLOW_STAR = '<img src="./img/yellow-star.png" class="yellow-star" alt="yellow rating star">';
-  var WHITE_STAR = '<img src="./img/white-star.png" class="white-star" alt="yellow rating star">';
+  var YELLOW_STAR = '<span class="yellow-star"></span>';
+  var WHITE_STAR = '<span class="white-star"></span>';
+  var loadMoreButton = $('#load-more-button');
+  var pageContentContainer = $('div.page-content');
 
   // Creates img elements
   function fiveStars() {
@@ -88,17 +90,54 @@ $(document).ready(function () {
     pageContent.css('padding', '60px ' + padding + 'px 45px');
   }
 
-  calculatePadding();
-  appendRating();
+  //Creates (clones existing) products for "Load more" button click
+  function getProducts() {
+    return pageContentContainer.children().filter(function (index) {
+      return index < 8
+    }).clone()
+  }
+
+  //Creates animated loader
+  function setLoader() {
+    loadMoreButton.children('p').css('visibility', 'hidden');
+    loadMoreButton.addClass('loader');
+  }
+
+  //Removes animated loader
+  function hideLoader() {
+    loadMoreButton.children('p').css('visibility', 'visible');
+    loadMoreButton.removeClass('loader');
+  }
 
   // Places elements in optimal position based on available vertical space
-  new Masonry('div.page-content', {
-    itemSelector: 'div.product',
-    columnWidth: 'div.product'
-  });
+  function callMasonry() {
+    new Masonry('div.page-content', {
+      itemSelector: 'div.product',
+      columnWidth: 'div.product'
+    });
+  }
 
+  //Initializes page layout
+  calculatePadding();
+  appendRating();
+  callMasonry();
+
+  // Event handlers
   $(window).resize(function() {
     calculatePadding();
+  });
+
+  loadMoreButton.click(function () {
+    var products = getProducts();
+
+    setLoader();
+
+    setTimeout(function () {
+      pageContentContainer.append(products);
+      hideLoader();
+      calculatePadding();
+      callMasonry();
+    }, 2000);
   });
 
 });

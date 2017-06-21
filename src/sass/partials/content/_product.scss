@@ -91,3 +91,18 @@
     text-decoration: none;
   }
 }
+
+.white-star, .yellow-star {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+}
+
+.white-star {
+  background-image: url("./img/white-star.png");
+}
+
+.yellow-star {
+  background-image: url("./img/yellow-star.png");
+}

@@ -14,7 +14,8 @@ mixin product-no-label(title, rating, author, date, description, tagList, imgSrc
       div.product__tag-list
         ul
           each tag in tagList
-            li #{tag}
+            li
+              a(href="#") #{tag}
       div.product__footer
         a(href="#") READ REVIEW
 
@@ -36,6 +37,7 @@ mixin product-labeled(title, rating, author, date, description, tagList, imgSrc,
       div.product__tag-list
         ul
           each tag in tagList
-            li #{tag}
+            li
+              a(href="#") #{tag}
       div.product__footer
         a(href="#") READ REVIEW
