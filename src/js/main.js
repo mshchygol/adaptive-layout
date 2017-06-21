@@ -2,8 +2,8 @@ var $ = require('jquery');
 var Masonry = require('masonry-layout');
 
 $(document).ready(function () {
-  var YELLOW_STAR = '<img src="./img/yellow-star.png" class="yellow-star">';
-  var WHITE_STAR = '<img src="./img/white-star.png" class="white-star">';
+  var YELLOW_STAR = '<img src="./img/yellow-star.png" class="yellow-star" alt="yellow rating star">';
+  var WHITE_STAR = '<img src="./img/white-star.png" class="white-star" alt="yellow rating star">';
 
   // Creates img elements
   function fiveStars() {

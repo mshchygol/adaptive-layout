@@ -14,7 +14,7 @@
 ####  Then run 
   <ul>
     <li>
-      <code>gulp build</code> to launch project deployment tasks
+      <code>gulp build</code> to launch project deployment tasks (please be patient it can take a minute)
     </li>
     <li>
        <code>gulp</code> for development enviorment (with <i>watch</i> task, be careful when you are<br>
@@ -24,12 +24,12 @@
   
   All production files will be able at _dist_ directory.
   
-  <p style="border-bottom: 1px dashed black;width: 700px;">P.S. Project deployment is still in progress.</p>
+  <p>P.S. Project deployment is still in progress.</p>
   </hr>
   My todo list:
     <ul>
-      <li style="text-decoration: line-through;">
-         replace <i>gulp-simplefont64</i> plugin
+      <li>
+         <strike>replace <i>gulp-simplefont64</i> plugin</strike>
       </li>
       <li>
          refactor <i>sass</i> files (add <code>_variables.scss</code>, add shorthand properties etc.)
