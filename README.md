@@ -38,7 +38,7 @@
          add <i>postCSS</i> and <i>autoprefixer</i> for cross-browser compatibility
       </li>
       <li>
-         add expandble menu list
+         <strike>add expandble menu list</strike>
       </li>
       <li>
          create custom modules for JS
