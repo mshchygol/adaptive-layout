@@ -1,8 +1,7 @@
 mixin product(imgSrc, title, rating, author)
   div.footer-product
     a(href="#")
-      div.footer-product__image
-        img(src= imgSrc alt='product image')
+      +image("footer-product__image")(style!= imgSrc)
       div.footer-product__details
         p.footer-product__title= title
         p(class= rating)

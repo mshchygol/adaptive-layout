@@ -2,12 +2,12 @@
 @import "products";
 
 footer {
-  font-family: "Avenir Next Cyr", sans-serif;
+  font-family: $font-avenir;
   background-color: #4a4a4a;
 }
 
 .footer-wrap {
-  max-width: 1380px;
+  max-width: $content-width;
   margin: 0 auto;
   padding: 70px 70px 0;
 }
@@ -23,17 +23,17 @@ footer {
 }
 
 .footer-bottom__wrap {
-  max-width: 1380px;
+  max-width: $content-width;
   margin: 0 auto;
   padding: 20px 70px;
 }
 
 .mail li {
-  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-family: $font-avenir-medium;
   margin-right: 15px;
 
   a {
-    font-family: "Avenir Next Cyr", sans-serif;
+    font-family: $font-avenir;
     text-decoration: none;
     color: #f6f6f6;
   }

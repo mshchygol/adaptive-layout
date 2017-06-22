@@ -3,15 +3,14 @@
 @import "navigation";
 
 header {
-  background-image: url("./img/header-bg.png");
-  background-repeat: no-repeat;
+  background: url("./img/header-bg.png") no-repeat;
   background-size: cover;
   width: 100%;
   position: relative;
 }
 
 .header {
-  max-width: 1380px;
+  max-width: $content-width;
   margin: 0 auto;
   height: 555px;
 }
@@ -23,14 +22,14 @@ header {
 }
 
 .header__content {
-  font-family: "Avenir Next Cyr Light", sans-serif;
+  font-family: $font-avenir-light;
   text-align: center;
   color: white;
   width: 80%;
   margin: auto;
 
   h1 {
-    font-family: "Avenir Next Cyr Demibold", sans-serif;
+    font-family: $font-avenir-demibold;
     margin-top: 52px;
     font-size: 32px;
   }
@@ -53,9 +52,7 @@ header {
   }
 
   .search-submit {
-    background-image: url("./img/search-icon.png");
-    background-repeat: no-repeat;
-    background-color: transparent;
+    background: transparent url("./img/search-icon.png") no-repeat;
     border: none;
     background-position-y: 50%;
     background-position-x: 50%;

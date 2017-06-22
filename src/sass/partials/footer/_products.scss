@@ -1,30 +1,34 @@
-
 .footer-product {
   display: inline-block;
   width: 32%;
   height: 210px;
   overflow: hidden;
   position: relative;
+  background-color:  rgba(0,0,0,0.5);
 
   &:hover {
     cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0 0 15px rgba(0,0,0,2);
+  }
 
-    img {
-      opacity: 1;
-    }
+  &:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
   }
 }
 
 .footer-product__image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   display: -webkit-flex; /* Safari */
   -webkit-justify-content: center; /* Safari 6.1+ */
-
-  img {
-    height: 100%;
-    opacity: 0.55;
-  }
 }
 
 .footer-product__details {

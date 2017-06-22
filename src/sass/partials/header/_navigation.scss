@@ -8,9 +8,9 @@
 }
 
 .nav__content {
-  max-width: 1380px;
+  max-width: $content-width;
   margin: 0 auto;
-  font-family: "Avenir Next Cyr", sans-serif;
+  font-family: $font-avenir;
   color: #ffffff;
   padding: 0 65px;
 

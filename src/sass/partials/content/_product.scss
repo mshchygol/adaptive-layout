@@ -39,7 +39,7 @@
 }
 
 .product__title {
-  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-family: $font-avenir-medium;
   color: #555555;
   font-size: 16px;
 }
@@ -57,7 +57,7 @@
 }
 
 .product__author, .product__date, .product__body {
-  font-family: "Avenir Next Cyr Light", sans-serif;
+  font-family: $font-avenir-light;
 }
 
 .product__body {

@@ -1,5 +1,5 @@
 #load-more-button {
-  font-family: "Avenir Next Cyr Light", sans-serif;
+  font-family: $font-avenir-light;
   text-align: center;
   margin-bottom: 35px;
   color: #b7b7b7;
@@ -25,9 +25,8 @@
 }
 
 .loader {
-  background-image: url(./img/loading-icon.gif);
+  background: url(./img/loading-icon.gif) no-repeat;
   background-size: 237px 150px;
-  background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
 }

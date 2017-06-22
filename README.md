@@ -32,7 +32,7 @@
          <strike>replace <i>gulp-simplefont64</i> plugin</strike>
       </li>
       <li>
-         refactor <i>sass</i> files (add <code>_variables.scss</code>, add shorthand properties etc.)
+         <strike>refactor <i>sass</i> files (add <code>_variables.scss</code>, add shorthand properties etc.)</strike>
       </li>
       <li>
          add <i>postCSS</i> and <i>autoprefixer</i> for cross-browser compatibility
