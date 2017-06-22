@@ -5,14 +5,15 @@ mixin social(src)
     a(href="#")
       img(src= src alt='icon image')
 
-ul.mail
-  +social('./img/icon-mail.png')
-  li
-    a(href="#") Have a question?
-  li contacts@smartreviewer.com
+div.footer-bottom__wrap
+  ul.mail
+    +social('./img/icon-mail.png')
+    li
+      a(href="#") Have a question?
+    li contacts@smartreviewer.com
 
-ul.social
-  +social(SOCIAL_ICONS[0])
-  +social(SOCIAL_ICONS[1])
-  +social(SOCIAL_ICONS[2])
-  +social(SOCIAL_ICONS[3])
+  ul.social
+    +social(SOCIAL_ICONS[0])
+    +social(SOCIAL_ICONS[1])
+    +social(SOCIAL_ICONS[2])
+    +social(SOCIAL_ICONS[3])

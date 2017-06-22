@@ -1,13 +1,19 @@
-.header__nav {
-  font-family: "Avenir Next Cyr", sans-serif;
-  color: #ffffff;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0 65px;
+.nav {
   font-size: 15px;
   height: 54px;
   background-color: rgba(50, 50, 50, 0.6);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav__content {
+  max-width: 1380px;
+  margin: 0 auto;
+  font-family: "Avenir Next Cyr", sans-serif;
+  color: #ffffff;
+  padding: 0 65px;
+
 
   ul {
     display: table;
@@ -30,7 +36,14 @@
   }
 }
 
-.collapsed {
+.fixed-nav {
+  background-color: rgba(50, 50, 50, 0.9);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+#collapsed {
   display: none;
 
   div {
@@ -41,7 +54,33 @@
   }
 }
 
-div.dropdown {
-  display: none;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
+.dropdown__content {
+  text-decoration: underline;
+  display: none;
+  position: absolute;
+  color: #333333;
+  background-color: #e6e6e7;
+  min-width: 125px;
+  z-index: 1;
+}
+
+.dropdown__content a {
+  color: black;
+  padding: 0 16px;
+  display: block;
+}
+
+.dropdown__content a:hover {
+  background-color: #333333;
+  color: #e6e6e7;
+  text-decoration: none !important;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}

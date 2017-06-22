@@ -1,0 +1,7 @@
+- var NAV_ITEMS = ['Electronics', 'Computers', 'Games', 'Music', 'Appliances', 'Home & Garden', 'Sport', 'Cars', 'Services', 'More']
+
+
+div(id="sidenav")
+    a(href="javascript:void(0)" class="closebtn") &times;
+    each item in NAV_ITEMS
+      a(href="#") #{item}

@@ -7,18 +7,25 @@ footer {
 }
 
 .footer-wrap {
+  max-width: 1380px;
+  margin: 0 auto;
   padding: 70px 70px 0;
 }
 
 .footer-bottom {
   color: #f6f6f6;
   background-color: #3c3c3c;
-  padding: 20px 70px;
   font-size: 13px;
 
   ul, li {
     display: inline-block;
   }
+}
+
+.footer-bottom__wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 20px 70px;
 }
 
 .mail li {

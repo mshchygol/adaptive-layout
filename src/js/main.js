@@ -2,10 +2,14 @@ var $ = require('jquery');
 var Masonry = require('masonry-layout');
 
 $(document).ready(function () {
+  //Constants and DOM elements
   var YELLOW_STAR = '<span class="yellow-star"></span>';
   var WHITE_STAR = '<span class="white-star"></span>';
   var loadMoreButton = $('#load-more-button');
   var pageContentContainer = $('div.page-content');
+  var collapsedMenuIcon = $('#collapsed');
+  var sidenav = $('#sidenav');
+  var mainNav = $('div.nav');
 
   // Creates img elements
   function fiveStars() {
@@ -82,7 +86,7 @@ $(document).ready(function () {
     var BLOCK_WIDTH = 300;
     var MIN_PADDING = 110;
     var pageContent = $('#main');
-    var pageContentWidth = $('body').width() - MIN_PADDING;
+    var pageContentWidth = $('main').width() - MIN_PADDING;
 
     var columns = parseInt(pageContentWidth / BLOCK_WIDTH);
     var padding = parseInt((pageContentWidth - columns * BLOCK_WIDTH)/2 + MIN_PADDING/2);
@@ -127,6 +131,7 @@ $(document).ready(function () {
     calculatePadding();
   });
 
+  //Simulates ajax request
   loadMoreButton.click(function () {
     var products = getProducts();
 
@@ -137,7 +142,27 @@ $(document).ready(function () {
       hideLoader();
       calculatePadding();
       callMasonry();
-    }, 2000);
+    }, 1000);
+  });
+
+  //Show and hides sidebar navigation
+  collapsedMenuIcon.click(function () {
+    sidenav.css('width', '250px');
+  });
+
+  sidenav.children('a').click(function () {
+    sidenav.css('width', '0');
+  });
+
+  //Makes sticky navigation bar
+  $(window).scroll(function () {
+    var position = $(window).scrollTop();
+
+    if (position > 503) {
+      mainNav.addClass('fixed-nav');
+    } else {
+      mainNav.removeClass('fixed-nav');
+    }
   });
 
 });

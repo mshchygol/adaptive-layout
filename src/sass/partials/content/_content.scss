@@ -1,6 +1,11 @@
 @import "product";
 @import "load-button";
 
+main {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
 #main {
   font-family: "Avenir Next Cyr", sans-serif;
   width: 100%;

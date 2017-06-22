@@ -3,11 +3,5 @@
 @import "partials/header/header";
 @import "partials/content/content";
 @import "partials/footer/footer";
+@import "partials/sidenav";
 @import "partials/responsive";
-
-body {
-  max-width: 1380px;
-  margin: 0 auto;
-  color: black;
-  font-family: "Avenir Next Cyr Ultra Light", sans-serif;
-}

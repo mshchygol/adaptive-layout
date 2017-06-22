@@ -1,11 +1,21 @@
 - var NAV_ITEMS = ['Electronics', 'Computers', 'Games', 'Music', 'Appliances', 'Home & Garden', 'Sport', 'Cars', 'Services', 'More']
 
-div.header__nav
-  div.collapsed
-    div
-    div
-    div
-  ul
-    each item in NAV_ITEMS
-      li
-        a(href="#") #{item}
+mixin dropdown()
+  div.dropdown__content
+    a(href="#") Item 1
+    a(href="#") Item 2
+    a(href="#") Item 3
+    a(href="#") Item 4
+    a(href="#") Item 5
+
+div.nav
+  div.nav__content
+    div#collapsed
+      div
+      div
+      div
+    ul
+      each item, i in NAV_ITEMS
+        li.dropdown
+          a(href="#") #{item}
+          +dropdown

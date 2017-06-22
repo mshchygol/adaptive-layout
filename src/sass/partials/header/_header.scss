@@ -2,13 +2,18 @@
 @import "logo";
 @import "navigation";
 
-.header {
+header {
   background-image: url("./img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 555px;
-  position: relative;
   width: 100%;
+  position: relative;
+}
+
+.header {
+  max-width: 1380px;
+  margin: 0 auto;
+  height: 555px;
 }
 
 .logo-wrap {
