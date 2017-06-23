@@ -41,7 +41,7 @@
          <strike>add expandble menu list</strike>
       </li>
       <li>
-         create custom modules for JS
+         <strike>create custom modules for JS</strike>
       </li>
       <li>
         setup gitHub page for preview

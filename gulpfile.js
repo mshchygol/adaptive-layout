@@ -71,6 +71,7 @@ gulp.task('build:app', function () {
     })
     .external(vendors)
     .bundle()
+       .on('error', errorLog)
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(streamify(uglify()
