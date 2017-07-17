@@ -7,6 +7,9 @@ var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 var imagemin = require('gulp-imagemin');
 var inlineFonts = require('gulp-inline-fonts');
 
@@ -20,11 +23,14 @@ gulp.task('pug', function () {
     .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('sass', function () {
+gulp.task('css', function () {
+  var processors = [
+    autoprefixer,
+    cssnano
+  ];
   return gulp.src('./src/sass/main.scss')
-    .pipe(sass({
-      style: 'compressed'
-    }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
     .pipe(gulp.dest('./dist'));
 });
 
@@ -84,7 +90,7 @@ gulp.task('build:app', function () {
 gulp.task('watch', function () {
   gulp.watch('./src/templates/**/*.pug', ['pug']);
   gulp.watch('./src/js/**/*.js', ['build:app']);
-  gulp.watch('./src/sass/**/*.scss', ['sass']);
+  gulp.watch('./src/sass/**/*.scss', ['css']);
 });
 
 function errorLog(error) {
@@ -92,6 +98,6 @@ function errorLog(error) {
   this.emit('end');
 }
 
-gulp.task('build', ['pug', 'sass', 'fonts', 'build:app', 'build:vendor', 'image']);
+gulp.task('build', ['pug', 'css', 'fonts', 'build:app', 'build:vendor', 'image']);
 
-gulp.task('default', ['pug', 'sass', 'build:app', 'build:vendor', 'watch']);
+gulp.task('default', ['pug', 'css', 'build:app', 'build:vendor', 'watch']);
