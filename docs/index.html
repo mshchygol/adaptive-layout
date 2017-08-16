@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Smart Reviewer</title>
+    <meta name="description" content="Smart Reviewer home page">
+    <meta name="keywords" content="review, games, action, JavaScript, gulp">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__contacts">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="logo-wrap"><a class="logo" href="#">
+            <p class="logo__top">SMART</p>
+            <p class="logo__bottom">REVIEWER</p></a></div>
+        <div class="header__content">
+          <h1>Only true and best reviews from the industry professionals</h1>
+          <h2>Over 1000+ truthful reviews of different products and services</h2>
+          <form action="#">
+            <input class="search-input" type="text" placeholder="Find a review" name="search">
+            <input class="search-submit" type="submit" value="">
+          </form>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav__content">
+          <div id="collapsed">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul>
+            <li class="dropdown"><a href="#">Electronics</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Computers</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Games</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Music</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Appliances</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Home &amp; Garden</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Sport</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Cars</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">Services</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+            <li class="dropdown"><a href="#">More</a>
+                    <div class="dropdown__content"><a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a><a href="#">Item 4</a><a href="#">Item 5</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="main">
+        <div class="page-content">
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/iphone.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">Apple iPhone 6S review</p>
+                  <div class="product__rating">
+                    <p class="two"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> John Mayer </span><span class="product__date">- Nov 2, 2015</span></p>
+                  <p class="product__description">Improved speed everywhere (new processor, faster wireless, quicker Touch ID sensor); a sturdier body; better front and rear cameras; a bold new 3D Touch pressure-sensitive display that could ...</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">mobile</a></li>
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">touch</a></li>
+                      <li><a href="#">news</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/halo.png&quot;);"></div>
+                <div class="product__label">BEST SELLER</div>
+                <div class="product__body">
+                  <p class="product__title">Why Halo 5: Guardians Record  Breaking Sales</p>
+                  <div class="product__rating">
+                    <p class="one"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> Jeffrey Wallens </span><span class="product__date">- Oct 22, 2015</span></p>
+                  <p class="product__description">As a whole the Xbox community has always been more interactive because of the Halo series. The PS4 following is still great but falls short. The fantastic sales records broken by Halo 5: Guardians shows...</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">games</a></li>
+                      <li><a href="#">action</a></li>
+                      <li><a href="#">xbox</a></li>
+                      <li><a href="#">pc</a></li>
+                      <li><a href="#">ps4</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/beats.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">Beats Solo 2 review</p>
+                  <div class="product__rating">
+                    <p class="three"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> David Carnoy </span><span class="product__date">- Oct 14, 2015</span></p>
+                  <p class="product__description">Like the new Studio, the Solo 2, which weighs in at 7.2 ounces (205 grams), is built more sturdily and has no visible screws.</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">music</a></li>
+                      <li><a href="#">beats</a></li>
+                      <li><a href="#">headphones</a></li>
+                      <li><a href="#">beats solo</a></li>
+                      <li><a href="#">streets</a></li>
+                      <li><a href="#">lifestyle</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/digital.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">DigitalOcean. Simple Cloud  Hosting, Built for Developers.</p>
+                  <div class="product__rating">
+                    <p class="four"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> Helen Fiesko </span><span class="product__date">- Oct 22, 2015</span></p>
+                  <p class="product__description">The services they provide are quite basic - you get VPS's in the cloud and DNS management, that's all. No fancy load balancing, hosted databases, hadoop clusters, etc.. </p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">servers</a></li>
+                      <li><a href="#">service</a></li>
+                      <li><a href="#">hosting</a></li>
+                      <li><a href="#">cheap</a></li>
+                      <li><a href="#">best</a></li>
+                      <li><a href="#">cloud</a></li>
+                      <li><a href="#">popular</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/beats.png&quot;);"></div>
+                <div class="product__label">BEST CHOICE</div>
+                <div class="product__body">
+                  <p class="product__title">Beats Solo 2 review</p>
+                  <div class="product__rating">
+                    <p class="three"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> David Carnoy </span><span class="product__date">- Oct 14, 2015</span></p>
+                  <p class="product__description">Like the new Studio, the Solo 2, which weighs in at 7.2 ounces (205 grams), is built more sturdily and has no visible screws.</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">music</a></li>
+                      <li><a href="#">beats</a></li>
+                      <li><a href="#">headphones</a></li>
+                      <li><a href="#">beats solo</a></li>
+                      <li><a href="#">streets</a></li>
+                      <li><a href="#">lifestyle</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/iphone.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">Apple iPhone 6S review</p>
+                  <div class="product__rating">
+                    <p class="two"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> John Mayer </span><span class="product__date">- Nov 2, 2015</span></p>
+                  <p class="product__description">Improved speed everywhere (new processor, faster wireless, quicker Touch ID sensor); a sturdier body; better front and rear cameras; a bold new 3D Touch pressure-sensitive display that could ...</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">mobile</a></li>
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">touch</a></li>
+                      <li><a href="#">news</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/digital.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">DigitalOcean. Simple Cloud  Hosting, Built for Developers.</p>
+                  <div class="product__rating">
+                    <p class="four"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> Helen Fiesko </span><span class="product__date">- Oct 22, 2015</span></p>
+                  <p class="product__description">The services they provide are quite basic - you get VPS's in the cloud and DNS management, that's all. No fancy load balancing, hosted databases, hadoop clusters, etc.. </p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">servers</a></li>
+                      <li><a href="#">service</a></li>
+                      <li><a href="#">hosting</a></li>
+                      <li><a href="#">cheap</a></li>
+                      <li><a href="#">best</a></li>
+                      <li><a href="#">cloud</a></li>
+                      <li><a href="#">popular</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/halo.png&quot;);"></div>
+                <div class="product__label">BEST SELLER</div>
+                <div class="product__body">
+                  <p class="product__title">Why Halo 5: Guardians Record  Breaking Sales</p>
+                  <div class="product__rating">
+                    <p class="one"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> Jeffrey Wallens </span><span class="product__date">- Oct 22, 2015</span></p>
+                  <p class="product__description">As a whole the Xbox community has always been more interactive because of the Halo series. The PS4 following is still great but falls short. The fantastic sales records broken by Halo 5: Guardians shows...</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">games</a></li>
+                      <li><a href="#">action</a></li>
+                      <li><a href="#">xbox</a></li>
+                      <li><a href="#">pc</a></li>
+                      <li><a href="#">ps4</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/digital.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">DigitalOcean. Simple Cloud  Hosting, Built for Developers.</p>
+                  <div class="product__rating">
+                    <p class="four"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> Helen Fiesko </span><span class="product__date">- Oct 22, 2015</span></p>
+                  <p class="product__description">The services they provide are quite basic - you get VPS's in the cloud and DNS management, that's all. No fancy load balancing, hosted databases, hadoop clusters, etc.. </p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">servers</a></li>
+                      <li><a href="#">service</a></li>
+                      <li><a href="#">hosting</a></li>
+                      <li><a href="#">cheap</a></li>
+                      <li><a href="#">best</a></li>
+                      <li><a href="#">cloud</a></li>
+                      <li><a href="#">popular</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/iphone.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">Apple iPhone 6S review</p>
+                  <div class="product__rating">
+                    <p class="two"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> John Mayer </span><span class="product__date">- Nov 2, 2015</span></p>
+                  <p class="product__description">Improved speed everywhere (new processor, faster wireless, quicker Touch ID sensor); a sturdier body; better front and rear cameras; a bold new 3D Touch pressure-sensitive display that could ...</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">mobile</a></li>
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">touch</a></li>
+                      <li><a href="#">news</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/halo.png&quot;);"></div>
+                <div class="product__label">BEST CHOICE</div>
+                <div class="product__body">
+                  <p class="product__title">Why Halo 5: Guardians Record  Breaking Sales</p>
+                  <div class="product__rating">
+                    <p class="one"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> Jeffrey Wallens </span><span class="product__date">- Oct 22, 2015</span></p>
+                  <p class="product__description">As a whole the Xbox community has always been more interactive because of the Halo series. The PS4 following is still great but falls short. The fantastic sales records broken by Halo 5: Guardians shows...</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">games</a></li>
+                      <li><a href="#">action</a></li>
+                      <li><a href="#">xbox</a></li>
+                      <li><a href="#">pc</a></li>
+                      <li><a href="#">ps4</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+              <div class="product">
+                    <div class="product__image" style="background-image: url(&quot;./img/beats.png&quot;);"></div>
+                <div class="product__body">
+                  <p class="product__title">Beats Solo 2 review</p>
+                  <div class="product__rating">
+                    <p class="three"></p>
+                  </div>
+                  <p><i>by</i><span class="product__author"> David Carnoy </span><span class="product__date">- Oct 14, 2015</span></p>
+                  <p class="product__description">Like the new Studio, the Solo 2, which weighs in at 7.2 ounces (205 grams), is built more sturdily and has no visible screws.</p>
+                  <div class="product__tag-list">
+                    <ul>
+                      <li><a href="#">music</a></li>
+                      <li><a href="#">beats</a></li>
+                      <li><a href="#">headphones</a></li>
+                      <li><a href="#">beats solo</a></li>
+                      <li><a href="#">streets</a></li>
+                      <li><a href="#">lifestyle</a></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer"><a href="#">READ REVIEW</a></div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </main>
+    <div id="load-more-button">
+      <p>LOAD MORE</p>
+    </div>
+    <footer>
+      <div class="footer-wrap">
+        <div class="row">
+          <div class="grid-5">
+            <div class="logo-wrap-footer"><a class="logo" href="#">
+                <p class="logo__top">SMART</p>
+                <p class="logo__bottom">REVIEWER</p></a></div>
+            <div class="about-block">
+              <h4 class="about-block__title">About</h4>
+              <p class="about-block__body">SmartReviewer tracks all the latest consumer technology breakthroughs and shows you what's new, what matters, and how technology can enrich your life. We give you the information, tools, and advice that will help you decide what to buy and how to get the most out of the tech in your life. We give you the information, tools, and advice that will help you decide what to buy.</p>
+            </div>
+            <div class="tags-block">
+              <h4 class="tags-block__title">Popular tags</h4>
+              <div class="tags-block__tags">
+                <ul>
+                  <li><a href="#">music</a></li>
+                  <li><a href="#">beats</a></li>
+                  <li><a href="#">headphones</a></li>
+                  <li><a href="#">beats solo</a></li>
+                  <li><a href="#">apple</a></li>
+                  <li><a href="#">streets</a></li>
+                  <li><a href="#">lifestyle</a></li>
+                  <li><a href="#">news</a></li>
+                  <li><a href="#">service</a></li>
+                  <li><a href="#">cloud</a></li>
+                  <li><a href="#">touch</a></li>
+                  <li><a href="#">samsung</a></li>
+                  <li><a href="#">mobile</a></li>
+                  <li><a href="#">xbox</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-7">
+            <div class="footer-items">
+              <p class="footer-items__title">Best Rates Products</p>
+                          <div class="footer-product"><a href="#">
+                                  <div class="footer-product__image" style="background-image: url(&quot;./img/footer-iphone.png&quot;);"></div>
+                              <div class="footer-product__details">
+                                <p class="footer-product__title">iPhone 6S review</p>
+                                <p class="four"></p>
+                                <p><span class="footer-product__author">by John Mayer - Nov 2, 2015</span></p>
+                              </div></a></div>
+                          <div class="footer-product"><a href="#">
+                                  <div class="footer-product__image" style="background-image: url(&quot;./img/syndicate.png&quot;);"></div>
+                              <div class="footer-product__details">
+                                <p class="footer-product__title">Assassin's Creed Syndicate  review</p>
+                                <p class="four"></p>
+                                <p><span class="footer-product__author">by David Carnoy - Oct 12, 2015</span></p>
+                              </div></a></div>
+                          <div class="footer-product"><a href="#">
+                                  <div class="footer-product__image" style="background-image: url(&quot;./img/nikon.png&quot;);"></div>
+                              <div class="footer-product__details">
+                                <p class="footer-product__title">Nikon D750 review</p>
+                                <p class="four"></p>
+                                <p><span class="footer-product__author">by John Mayer - Nov 2, 2015</span></p>
+                              </div></a></div>
+            </div>
+            <div class="footer-items">
+              <p class="footer-items__title">Best Latest Reviews</p>
+                          <div class="footer-product"><a href="#">
+                                  <div class="footer-product__image" style="background-image: url(&quot;./img/samsung.png&quot;);"></div>
+                              <div class="footer-product__details">
+                                <p class="footer-product__title">Samsung UNH6350 series  review</p>
+                                <p class="four"></p>
+                                <p><span class="footer-product__author">by John Mayer - Nov 2, 2015</span></p>
+                              </div></a></div>
+                          <div class="footer-product"><a href="#">
+                                  <div class="footer-product__image" style="background-image: url(&quot;./img/footer-beats.png&quot;);"></div>
+                              <div class="footer-product__details">
+                                <p class="footer-product__title">Beats Solo 2. Why is it so  popular?</p>
+                                <p class="five"></p>
+                                <p><span class="footer-product__author">by David Carnoy - Oct 12, 2015</span></p>
+                              </div></a></div>
+                          <div class="footer-product"><a href="#">
+                                  <div class="footer-product__image" style="background-image: url(&quot;./img/galaxy.png&quot;);"></div>
+                              <div class="footer-product__details">
+                                <p class="footer-product__title">Samsung Galaxy S6</p>
+                                <p class="four"></p>
+                                <p><span class="footer-product__author">by John Mayer - Nov 2, 2015</span></p>
+                              </div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__wrap">
+          <ul class="mail">
+                    <li><a href="#"><img src="./img/icon-mail.png" alt="icon image"></a></li>
+            <li><a href="#">Have a question?</a></li>
+            <li>contacts@smartreviewer.com</li>
+          </ul>
+          <ul class="social">
+                    <li><a href="#"><img src="./img/facebook.png" alt="icon image"></a></li>
+                    <li><a href="#"><img src="./img/twitter.png" alt="icon image"></a></li>
+                    <li><a href="#"><img src="./img/gplus.png" alt="icon image"></a></li>
+                    <li><a href="#"><img src="./img/pinterest.png" alt="icon image"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="sidenav"><a class="closebtn" href="javascript:void(0)">&times;</a><a href="#">Electronics</a><a href="#">Computers</a><a href="#">Games</a><a href="#">Music</a><a href="#">Appliances</a><a href="#">Home &amp; Garden</a><a href="#">Sport</a><a href="#">Cars</a><a href="#">Services</a><a href="#">More</a>
+    </div>
+    <script src="vendor.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
