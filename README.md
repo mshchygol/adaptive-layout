@@ -24,31 +24,6 @@
   
   All production files will be able at _dist_ directory.
   
-  <p>P.S. Project deployment is still in progress.</p>
-  </hr>
-  My todo list:
-    <ul>
-      <li>
-         <strike>replace <i>gulp-simplefont64</i> plugin</strike>
-      </li>
-      <li>
-         <strike>refactor <i>sass</i> files (add <code>_variables.scss</code>, add shorthand properties etc.)</strike>
-      </li>
-      <li>
-         <strike>add <i>postCSS</i> and <i>autoprefixer</i> for cross-browser compatibility</strike>
-      </li>
-      <li>
-         <strike>add expandble menu list</strike>
-      </li>
-      <li>
-         <strike>create custom modules for JS</strike>
-      </li>
-      <li>
-        setup gitHub page for preview
-      </li>
-    </ul>
-  
-  
   ## License
   
   General public license
