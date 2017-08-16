@@ -1,4 +1,9 @@
+## Preview
+  Project preview is enable [here.](https://mshchygol.github.io/adaptive-layout/)
+
 ## Project setup
+
+#### First step
   First of all you need to clone this repository:
   
    `git clone https://github.com/mshchygol/adaptive-layout.git`
@@ -11,7 +16,7 @@
    
   `npm install`
   
-####  Then run 
+####  Second step
   <ul>
     <li>
       <code>gulp build</code> to launch project deployment tasks (please be patient it can take a minute)
